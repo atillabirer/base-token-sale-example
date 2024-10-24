@@ -2,10 +2,12 @@
 
 This script deploys a token on Base Mainnet, deploys an Uniswap V2 liquidity pool with all the ETH balance in your wallet, and then returns the token address in the terminal. It uses Infura gas API to fetch the best fees to prevent transaction from being dropped.
 
-Simply replace "SEED PHRASE HERE" with your seed phrase (wallet must have Base ETH) in hardhat.config.ts and then run:
+## Instructions
+
+1. Simply replace "SEED PHRASE HERE" with your seed phrase (wallet must have Base ETH) in hardhat.config.ts and then run:
 
 
-
+2. Run these commands:
 ```shell
 yarn install
 yarn run hardhat run scripts/dynamicfee.ts --network base
