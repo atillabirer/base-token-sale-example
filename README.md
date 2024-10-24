@@ -4,9 +4,7 @@ This script deploys a token on Base Mainnet, deploys an Uniswap V2 liquidity poo
 
 ## Instructions
 
-1. Simply replace "SEED PHRASE HERE" with your seed phrase (wallet must have Base ETH) in hardhat.config.ts and then run:
-
-
+1. Replace "SEED PHRASE HERE" with your seed phrase (wallet must have Base ETH) in **hardhat.config.ts**,
 2. Run these commands:
 ```shell
 yarn install
