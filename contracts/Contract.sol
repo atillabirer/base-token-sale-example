@@ -172,7 +172,7 @@ contract Contract is Ownable, ERC20 {
         _symbol = csymbol;
         _decimals = cdecimals;
 
-        router = IDEXRouter(0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24);
+        router = IDEXRouter(0x2626664c2603336E57B271c5C0b26F421741e481);
         WETH = router.WETH();
         pair = IDEXFactory(router.factory()).createPair(WETH, address(this));
         pairContract = InterfaceLP(pair);

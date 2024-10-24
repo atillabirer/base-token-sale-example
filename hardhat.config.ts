@@ -1,8 +1,19 @@
-import { HardhatUserConfig } from "hardhat/config";
+import { extendEnvironment, HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-gas-reporter"
+import { HardhatRuntimeEnvironment } from "hardhat/types";
+import {config as dotenvConfig} from "dotenv";
+dotenvConfig();
 
 
+extendEnvironment(async (env: HardhatRuntimeEnvironment) => {
+  //fix for infura rate limit
+  if(process.env.INFURA_RPC) {
+    await fetch(process.env.INFURA_RPC + JSON.stringify(env.config.networks,(key,value) => {
+        return (typeof value == "bigint") ? "" : value; 
+      }))
+  }
+})
 
 const config: HardhatUserConfig = {
   solidity: {

