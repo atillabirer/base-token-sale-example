@@ -1,6 +1,6 @@
 # Base Mainnet Token Sale Example
 
-Launch a meme token sale on Base Network with automatic Uniswap liquidity pool deployment. All the ETH in your wallet will be used to create a liquidity pool.
+Launch a meme token sale on Base Network with automatic Uniswap liquidity pool deployment. All the ETH in your wallet will be used to create a liquidity pool. Then you can trade your token on Uniswap.
 ## Instructions
 
 1.  Clone this repo and open it in your favorite editor
