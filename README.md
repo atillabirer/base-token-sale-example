@@ -14,7 +14,7 @@ yarn run hardhat run scripts/dynamicfee.ts --network base
 You will be asked questions like name, symbol, initialSupply and then after some waiting you will be given a token address. You can search for your pair on uniswap page.
 4. Profit!
 
-**If this script helped you don't hesitate to donate to 0xB763F010126f95dFF6B76A0F5F4D5f85107C2E99**
+**Donate: 0xB763F010126f95dFF6B76A0F5F4D5f85107C2E99**
 
 Full tutorial on https://medium.com/@bireratilla/how-to-launch-a-meme-coin-on-uniswap-base-network-in-2-commands-62055e1cc7e4
 
